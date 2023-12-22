@@ -32,7 +32,7 @@ async function main() {
     }
     
     processed++;
-    if (processed % 10000) {
+    if (processed % 1000 === 0) {
       console.log(`${new Date().toISOString()} - expunged ${processed} resources`);
       console.log(`${new Date().toISOString()} - just finished processing ${deletedResource}`);
     }
